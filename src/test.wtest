@@ -1,0 +1,13 @@
+import remiseras.*
+test "cuanto cobran" {
+	anaMaria.indicarQueEstaEstable()
+	assert.equals( roxana.cuantoCobra(ludmila, 10) == 180 )
+	assert.equals( roxana.cuantoCobra(anaMaria, 10) == 300 )
+	assert.equals( roxana.cuantoCobra(teresa, 10) == 220 )
+	assert.equals( gabriela.cuantoCobra(ludmila, 10) == 216 )
+	assert.equals( gabriela.cuantoCobra(anaMaria, 10) == 360 )
+	assert.equals( gabriela.cuantoCobra(teresa, 10) == 264 )
+	assert.equals( juana.cuantoCobra(ludmila, 10) == 200 )
+	assert.equals( juana.cuantoCobra(anaMaria, 10) == 200 )
+	assert.equals( juana.cuantoCobra(teresa, 10) == 200 )
+}
